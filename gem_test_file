@@ -1,0 +1,66 @@
+source :rubygems
+
+# use Ruby 1.9.3 in Heroku http://bit.ly/Kx4TLa
+ruby '1.9.3'
+
+gem 'rails', '~> 3.2'
+
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'bootstrap-sass'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+end
+
+
+gem 'airbrake'
+gem 'bootstrap-form'
+gem 'devise'
+gem 'eco'
+gem 'jquery-rails'
+gem 'madmimi'
+gem 'omniauth-github'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-google'
+gem 'pg'
+gem 'pusher'
+gem 'pusher_rails', '0.2.0'
+gem 'rack-google-analytics', :require => 'rack/google-analytics'
+gem 'rails-backbone'
+gem 'slim'
+gem 'slim_assets'
+
+
+group :development, :test do
+  gem 'autotest-rails'
+  gem 'autotest-growl'
+  gem 'capistrano'
+  gem 'capistrano-ext'
+  gem 'fabrication'
+  gem 'faker'
+  gem 'fivemat'
+  gem 'heroku'
+  gem 'launchy'
+  gem 'pivotal_git_scripts'
+  gem 'powder'
+  gem 'quiet_assets'
+  gem 'rake'
+  gem 'rspec-rails'
+  gem 'simplecov', :require => false
+  gem 'spork'
+  gem 'sqlite3'
+  gem 'jasmine'
+end
+
+
+group :test do
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'webmock'
+  gem 'vcr'
+end
